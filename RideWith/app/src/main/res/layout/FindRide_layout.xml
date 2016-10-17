@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/hitchhiker"
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="225dp" />
+
+    <TextView
+        android:text="Where to?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="36sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/destinationTxt"
+        android:inputType="textPostalAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:hint="Destination"
+        android:singleLine="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Find Rides"
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_marginTop="38dp"
+        android:theme="@style/AppTheme"
+        android:elevation="6dp"
+        android:layout_below="@+id/destinationTxt"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button" />
+
+</RelativeLayout>

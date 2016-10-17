@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Hub"
-            android:label="@string/title_activity_hub"
+            android:name=".RideWith"
+            android:label="@string/title_activity_ride_with"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

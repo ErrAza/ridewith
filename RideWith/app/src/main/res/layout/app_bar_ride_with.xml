@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="za.co.ridewith.ridewith.Hub">
+    tools:context="za.co.ridewith.ridewith.RideWith">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_hub" />
+    <include layout="@layout/content_ride_with" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

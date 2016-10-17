@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorPrimary"
     tools:context="za.co.ridewith.ridewith.MainActivity"
     android:orientation="vertical"
     android:weightSum="1">
@@ -19,7 +19,7 @@
         android:layout_height="331dp"
         app:srcCompat="@drawable/new_logo_1024"
         android:id="@+id/imageView7"
-        android:layout_weight="0.59" />
+        android:layout_weight="0.05" />
 
     <TextView
         android:text="RIDEWITH"
@@ -30,19 +30,27 @@
         android:textAlignment="center"
         android:textColor="@android:color/background_light" />
 
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progressBar"
+        android:background="@android:color/background_light"
+        android:layout_height="2dp"
+        android:layout_width="match_parent" />
+
     <TextView
         android:text="Meet friends. Go places."
         android:layout_width="match_parent"
         android:id="@+id/textViewSub"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light" />
 
     <ProgressBar
-        style="?android:attr/progressBarStyleSmall"
+        style="@android:style/Widget.Material.Light.ProgressBar.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progressBar7"
-        android:layout_weight="0.29" />
+        android:layout_weight="0.24" />
 
 </LinearLayout>

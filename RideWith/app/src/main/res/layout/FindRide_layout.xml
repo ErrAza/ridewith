@@ -6,51 +6,79 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         app:srcCompat="@drawable/hitchhiker"
         android:id="@+id/imageView2"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_height="225dp" />
+        android:background="@android:drawable/checkbox_off_background" />
 
-    <TextView
-        android:text="Where to?"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="6dp"
-        android:textAlignment="center"
-        android:textStyle="normal|bold"
-        android:textSize="36sp" />
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frame_1">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:id="@+id/destinationTxt"
-        android:inputType="textPostalAddress"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:hint="Destination"
-        android:singleLine="false"
-        android:textAlignment="center" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:text="Find Rides"
-        android:background="@android:color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_marginTop="38dp"
-        android:theme="@style/AppTheme"
-        android:elevation="6dp"
-        android:layout_below="@+id/destinationTxt"
-        android:layout_centerHorizontal="true"
-        style="@style/Widget.AppCompat.Button" />
+            <TextView
+                android:text="Where to?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textSize="36sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:id="@+id/editText"
+                android:hint="Destination"
+                android:textAlignment="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <Button
+                android:text="Find Rides"
+                android:background="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button2"
+                android:theme="@style/AppTheme"
+                android:elevation="6dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@android:color/background_light"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="74dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
 
 </RelativeLayout>
